@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    background-color: #e5eff5;
+}
+
+* {
+    font-family: 'Karla', sans-serif;
+    color: #fff;
+}
+
+h1 {
+    color: #2bb3b1;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+h2 {
+    color: #bfdf32;
+    font-weight: 700;
+}
+
+h2 + p {
+    color: #acacb5;
+    line-height: 1.7em;
+}
+
+h3 {
+    margin: 0;
+}
+
+button {
+    background-color: #bfdf32;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    padding: 16px;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0;
+    line-height: 1.5em;
+}
+
+ul li {
+    color: #c0e7e5;
+}
+
+body > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 45% 55%;
+    width: 50vw;
+    height: auto;
+    margin: 90px auto;
+}
+
+#col-2 {
+    background-color: #fff;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-radius: 10px 10px 0 0;
+    padding: 2em;
+}
+
+div:nth-child(2) {
+    background-color: #2bb3b1;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    border-radius: 0 0 0 10px;
+    padding: 2em;
+}
+
+div:nth-child(3) {
+    background-color: #4abebd;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    border-radius: 0 0 10px 0;
+    padding: 2em;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    /*
+    Por el tiempo se me olvidó agregarle la siguiente propiedad en la práctica,
+    pero esta es la que permite que los elementos queden alineados de la parte inferior
+    */
+    justify-content: space-between;
+}
+
+h3 + p {
+    color: #c0e7e5;
+    display: flex;
+    align-items: center;
+}
+
+span {
+    font-size: 2em;
+    font-weight: 700;
+    margin-right: 12px;
+}
+
+@media only screen and (max-width: 746px) {
+    body > div {
+        grid-template-rows: auto auto auto;
+        width: 80vw;
+    }
+
+    div:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 0;
+    }
+    
+    div:nth-child(3) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-radius: 0 0 10px 10px;
+    }
+}

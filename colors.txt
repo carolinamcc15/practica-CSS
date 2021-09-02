@@ -1,0 +1,6 @@
+Background: #e5eff5
+Dark aqua: #2bb3b1
+Light aqua: #4abebd
+Grayish aqua: #c0e7e5
+Green: #bfdf32
+Gray: #acacb5
